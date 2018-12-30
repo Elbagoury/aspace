@@ -289,14 +289,12 @@
                 <field name="name">Evaluations</field>
                 <field name="model">oeh.medical.evaluation</field>
                 <field name="arch" type="xml">
-                    <tree colors="red:bmi&lt;=18 or bmi&gt;=25" string='Evaluations'>
+                    <tree string='Evaluations'>
                         <field name="name"/>
                         <field name="patient"/>
                         <field name="doctor"/>
                         <field name="appointment"/>
                         <field name="evaluation_start_date"/>
-                        <field name="indication"/>
-                        <field name="bmi"/>
                         <field name="evaluation_type"/>
                     </tree>
                 </field>

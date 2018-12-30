@@ -177,10 +177,10 @@ class OeHealthPatient(models.Model):
                     dod=datetime.datetime.strptime(patient_dod,'%Y-%m-%d')
                     delta= dod - dob
                     deceased=" (deceased)"
-                    years_months_days = str(delta.days // 365)+" years "+ str(delta.days%365)+" days" + deceased
+                    years_months_days = str(delta.days // 365)+" anos "+ str(delta.days%365)+" dias" + deceased
                 else:
                     delta= now - dob
-                    years_months_days = str(delta.days // 365)+" years "+ str(delta.days%365)+" days"
+                    years_months_days = str(delta.days // 365)+" anos "+ str(delta.days%365)+" dias"
             else:
                 years_months_days = "No DoB !"
 
